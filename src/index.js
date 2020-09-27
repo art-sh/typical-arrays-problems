@@ -1,12 +1,11 @@
+exports.min = (array) => (!array || !array.length)
+  ? 0
+  : Math.min(...array);
 
-exports.min = function min (array) {
-  return 0;
-}
+exports.max = (array) => (!array || !array.length)
+  ? 0
+  : Math.max(...array);
 
-exports.max = function max (array) {
-  return 0;
-}
-
-exports.avg = function avg (array) {
-  return 0;
-}
+exports.avg = (array) => (!array || !array.length)
+  ? 0
+  : array.reduce((sum, item) => sum + item, 0) / array.length
